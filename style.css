@@ -1,0 +1,252 @@
+:root{
+    --bg1:#0EB29A;
+    --bg5:#0E918C;
+    --bg3:#DDF0C2;
+    --bg2:#e0e1da;
+    --bg4:#8C999A;
+    --bg6:#495579;
+
+}
+
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+header{
+    background: var(--bg1);
+    padding:15px;
+    text-align:center;
+    margin-bottom:20px;
+    
+}
+.center{
+    width:100%;
+    margin:0 auto;
+    /* background-color: #FF1E56; */
+    max-width:1200px;
+    display:flex;
+}
+header .center {
+    padding: 0 20px;
+    justify-content:space-between;
+}
+.logo{
+    font-size:20px;
+    color:var(--bg2);
+    padding-left:20px;
+
+}
+.menu{
+    display:flex;
+
+    align-items:center;
+
+}
+.menu a{
+    color: var(--bg2);
+    text-decoration:none;
+    font-size:25px;
+    font-weight: bold;
+    margin: 0 15px;
+}.menu a:hover{
+    border-bottom: 5px solid var(--bg6);
+}
+.clear{
+clear:both;
+}
+aside{
+    display:flex;
+    flex-direction:column;
+    background-color:var(--bg1);
+    width:20%;
+    color: var(--bg2);
+    padding:20px 0;
+    position:relative;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    float:left;
+}
+aside h3{
+    text-align:center;
+    font-size:24px;
+    padding:10px;
+    margin-bottom:10px
+}
+.contas{
+    display:flex;
+    flex-direction:column;
+    background-color: var(--bg2);
+    margin:0 auto;
+    width:80%;
+    border-radius:15px;
+    padding:10px;
+}
+.contas a{
+    color: var(--bg5);
+    text-decoration:none;
+    font-weight:bold;
+    font-size:24px;
+    padding:10px;
+    margin:0 auto;
+    
+}
+main{
+    /* background-color: var(--bg1); */
+    background-color: var(--bg2);
+    color: var(--bg5);
+    float:left;
+    width:75%;
+    padding:20px;
+    border-radius:10px;
+    margin: 0 2.5%;
+}
+.banner h1{
+    font-size:40px;
+    text-align:center;
+    margin-bottom:10px;
+}
+.banner h2{
+    font-size:26px;
+    margin-bottom:20px;
+    text-align: center;
+}
+.banner-info{
+    
+    
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width:90%;
+    margin:0 auto;
+    padding: 0 20px;
+    border-radius:15px;
+}
+.descricao{
+    font-size:25px;
+    color: var(--bg5);
+    padding:20px;
+}
+.banner-descricao{
+    font-size:25px;
+    color: var(--bg5);
+    padding:20px;
+}
+.descricao li{
+    list-style-position: inside;
+    
+}
+.leader-preview{
+    background-color: var(--bg1);
+    color: var(--bg2);
+    margin-top: 1.5%;
+    margin-left:2.5%;
+    width:75%;
+    float:left;
+    border-radius:15px;
+    padding:12px;
+}
+.score{
+    display:flex;
+    justify-content: space-evenly;
+    font-size:20px;
+    margin-top: 10px;
+}
+.leader-preview h3{
+    font-size:22px;
+    font-weight: bold;
+}
+.conta-individual{
+    margin:30px;
+    display:flex;
+
+}
+
+.accounts{
+    padding:30px;
+    margin-top:50px;
+    background-color:var(--bg1);
+    display:flex;
+    gap:1%;
+    width:100%;
+    flex-wrap:wrap;
+    
+
+}
+.one-account{
+    padding:10px;
+    border-radius:10px;
+    background-color: var(--bg2);
+    width:24%;
+    margin-bottom:1%;
+}
+.one-account h2{
+    font-size:34px;
+    margin-bottom:10px;
+}
+.resource h3{
+    font-size:22px;
+}
+.resource h5{
+    font-size:16px;
+    font-weight:normal;
+}
+.resource{
+    display:flex;
+    gap:3px;
+    flex-direction:column;
+}
+@media (max-width:450px){
+    .one-account{
+        width:100%;
+        
+    }
+    aside{
+        display:none;
+        float:none;
+    }
+    main{
+        float:none;
+        width:100%;
+        margin:0;
+    }
+    .leader-preview{
+        float:none;
+        width:95%;
+        margin:2%;
+    }
+    .score{
+        flex-direction:column;
+        
+    }
+    .menu{
+        display:none;
+    }
+    .logo{
+        margin:0 auto;
+    }
+    
+    .banner h1{
+        font-size:26px;
+
+    }
+    .banner h2{
+        font-size:17px;
+    }
+    .descricao{
+        font-size:16px;
+        padding:5px;
+    }
+    .banner-info{
+        margin:0;
+        padding:5px;
+    }
+    .banner p{
+        font-size:22px;
+    }
+    .one-account{
+        margin-bottom:5% ;
+    }
+}
