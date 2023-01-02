@@ -29,6 +29,12 @@ header{
     max-width:1200px;
     display:flex;
 }
+section .center{
+    
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+}
 header .center {
     padding: 0 20px;
     justify-content:space-between;
@@ -171,32 +177,46 @@ main{
     display:flex;
     gap:1%;
     width:100%;
+    margin:0 auto;
     flex-wrap:wrap;
     
 
 }
 .one-account{
-    padding:10px;
+    padding:20px;
     border-radius:10px;
     background-color: var(--bg2);
-    width:24%;
+    width:47%;
     margin-bottom:1%;
+    
+}
+.one-account .infos{
+    justify-content:space-between;
+    display:flex;
+}
+.one-account .gs{
+    font-size:28px;
+    color:#1989AC;
 }
 .one-account h2{
     font-size:34px;
     margin-bottom:10px;
 }
 .resource h3{
-    font-size:22px;
+    font-size:26px;
 }
 .resource h5{
-    font-size:16px;
+    font-size:20px;
     font-weight:normal;
 }
 .resource{
     display:flex;
-    gap:3px;
-    flex-direction:column;
+    gap:40px;
+    justify-content: space-evenly;
+    flex-wrap:wrap;
+}
+.resource div{
+    margin-top:20px;
 }
 @media (max-width:450px){
     .one-account{
